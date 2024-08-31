@@ -23,7 +23,7 @@ To make this folder be accesseble by multiple users, we need to change the permi
 sudo chmod 777 /mnt/my_share_folder
 ```
 
-## step 3 - Configuring the NFS Exports on the Host server
+## Step 3 - Configuring the NFS Exports on the Host server
 ```
 sudo nano /etc/exports
 ```
@@ -31,3 +31,40 @@ Add lines below to /etc/exports
 ```
 /mnt/my_share_folder  *client_ip*(rw,sync,no_root_squash,no_subtree_check)
 ```
+After save and close the file, restart the NFS server:
+```
+sudo systemctl restart nfs-kernel-server
+```
+
+## Step 4 - Adjusting the Firewall on the Host Server
+I recommend to restrict the incoming connections from specific IP address.
+```
+sudo ufw allow from *client_ip* to any port nfs
+```
+
+## Step 5 - Create Mount Points and Mounting Directories on the Client
+Here, I use /mnt/shared_folder as mouting directory on the client.
+```
+sudo mkdir /mnt/shared_folder
+```
+```
+sudo mount *host_ip:/mnt/my_share_folder
+```
+
+## (Optional) Testing NFS Access
+On client:
+```
+sudo touch /mnt/my_share_folder/general.test
+```
+```
+ls -l /mnt/my_share_folder/general.test
+```
+
+
+
+
+
+
+
+
+
