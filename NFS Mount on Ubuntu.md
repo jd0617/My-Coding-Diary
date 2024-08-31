@@ -64,7 +64,7 @@ ls -l /mnt/client_folder/general.test
 ```
 
 ## Step 6 - Change permission of Mounting Directories
-This is to give every users on the host system permission to read and write files on the mouting directories.
+This is to give every users on the host system permission to read and write files on the mounting directories.
 ```
 sudo chmod 777 /mnt/client_folder
 ```
