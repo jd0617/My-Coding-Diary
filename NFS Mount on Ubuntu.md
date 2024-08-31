@@ -1,7 +1,7 @@
 # NFS Mount on Ubuntu
 
 ## Reference
-- [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04#step-5-creating-mount-points-and-mounting-directories-on-the-client)
+- [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04)
 
 ## Step 1 - Download and Install the Components
 ### On the Host Server
