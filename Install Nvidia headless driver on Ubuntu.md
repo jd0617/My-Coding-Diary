@@ -38,3 +38,6 @@ Also, you may want to check the utilization and configure the gpu by nvidia-smi:
 ```
 sudo apt install nvidia-utils-<version>-server
 ```
+Reboot.
+
+Good luck!
