@@ -3,7 +3,7 @@
 ## Reference
 - [1] https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-20-04/
 
-## Step 1 - Idetify the nertwork interface names.
+## Step 1 - Identify the nertwork interface names.
 Use command:
 ```
 ip a
