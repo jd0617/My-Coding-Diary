@@ -38,7 +38,7 @@ network:
       nameservers:
           addresses: [8.8.8.8, 1.1.1.1]
 ```
-After that save the file with `Ctrl O + Enter` and close the file with `Ctrl + X`.
+After that save the file with `Ctrl + o, Enter` and close the file with `Ctrl + X`.
 
 ## Step 4 - Apply the change
 After apllying the change, your terminal will be disconnected fomr the server. Just access the server with the newly set static IP address.
