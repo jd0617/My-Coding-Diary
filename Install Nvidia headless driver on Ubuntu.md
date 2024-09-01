@@ -22,7 +22,7 @@ It should return
 blacklist nouveau
 options nouveau modeset=0
 ```
-Step 3 - Update kernel **initramfs**
+Step 3 - Update kernel **initramfs** and reboot
 ```
 sudo update-initramfs -u
 ```
