@@ -13,15 +13,15 @@ sudo bash -c "echo blacklist nouveau > /etc/modprobe.d/blacklist-nvidia-nouveau.
 ```
 sudo bash -c "echo options nouveau modeset=0 >> /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
 ```
-Step 2 - Confirm the content of the newly created modeprobe file blacklist-nvidia-nouveau.conf:
+Step 2 - Confirm the content of the newly created modeprobe file `blacklist-nvidia-nouveau.conf`:
 ```
 cat /etc/modprobe.d/blacklist-nvidia-nouveau.conf
 ```
 It should return 
-`
+``
 blacklist nouveau
 options nouveau modeset=0
-`
+``
 Step 3 - Update kernel `initramfs` and reboot
 ```
 sudo update-initramfs -u
