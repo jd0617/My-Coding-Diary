@@ -22,6 +22,13 @@ It should return
 blacklist nouveau
 options nouveau modeset=0
 ```
+Step 3 - Update kernel **initramfs**
+```
+sudo update-initramfs -u
+```
+```
+sudo reboot
+```
 
 ## (Optional) Uninstall all previous installations
 This step will removing all nvidia related packages include cuda and driver.
