@@ -18,10 +18,10 @@ Step 2 - Confirm the content of the newly created modeprobe file blacklist-nvidi
 cat /etc/modprobe.d/blacklist-nvidia-nouveau.conf
 ```
 It should return 
-```bash
+`
 blacklist nouveau
 options nouveau modeset=0
-```
+`
 Step 3 - Update kernel `initramfs` and reboot
 ```
 sudo update-initramfs -u
