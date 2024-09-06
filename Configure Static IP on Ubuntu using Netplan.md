@@ -20,6 +20,7 @@ network: {config: disabled}
 
 ## Step 3 - Edit the YAML configuration file:
 The configuration file may appear in different filename depends of machines and system.
+
 But it should be located under `/etc/netplan/`.
 ```
 sudo nano /etc/netplan/01-netcfg.yaml
@@ -41,7 +42,8 @@ network:
 After that save the file with `Ctrl + o, Enter` and close the file with `Ctrl + X`.
 
 ## Step 4 - Apply the change
-After apllying the change, your terminal will be disconnected fomr the server. Just access the server with the newly set static IP address.
+After applying the change, your terminal will be disconnected from the server. Just access the server with the newly set static IP address.
+
 Also, you may want to ensure no sending or receiving of files such as dataset before you apply the change as it will be interrupted.
 ```
 sudo netplan apply
