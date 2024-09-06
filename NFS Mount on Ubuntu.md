@@ -96,7 +96,7 @@ sudo usermod -aG -mygroup* *username*
 ```
 Change the group ownership of the folder, here we use chown:
 ```
-sudo chown :*mygroup* /pth/to/folder
+sudo chown :*mygroup* /path/to/folder
 ```
 Set group permissions:
 Sometime sudo will be needed to perform this step.
