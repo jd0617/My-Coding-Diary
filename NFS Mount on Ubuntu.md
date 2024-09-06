@@ -85,4 +85,31 @@ Save and close the file.
 sudo umount *folder_path*
 ```
 
+## Make folder only accesseble by specific group
+Create group if desires group not yet been created:
+```
+sudo groupadd *mygroup*
+```
+Add user(s) to the group:
+```
+sudo usermod -aG -mygroup* *username*
+```
+Change the group ownership of the folder, here we use chown:
+```
+sudo chown :*mygroup* /pth/to/folder
+```
+Set group permissions:
+Sometime sudo will be needed to perform this step.
+For more deatils about using chmod with numbers, please refer to [here](https://help.ubuntu.com/community/FilePermissions#chmod_with_Numbers).
+770: Owner and group have full permissions (read, write, execute); others have no access.
+750: Owner has full permissions, group has read and execute permissions, others have no access.
+```
+chmod 770 /path/to/folder
+```
+Verify permission of folders:
+```
+ls -l
+```
+
+
 Good Luck!
