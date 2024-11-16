@@ -6,6 +6,7 @@
 
 ## Disable and blacklist default Nouveau nvidia driver on Ubuntu
 Source: [1]
+
 Step 1 - blacklist Nouveau driver
 ```
 sudo bash -c "echo blacklist nouveau > /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
