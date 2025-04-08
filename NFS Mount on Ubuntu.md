@@ -7,7 +7,7 @@
 ### On the Host Server
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install nfs-kernel-server
+sudo apt install nfs-kernel-server -y
 ```
 ### On the Client
 ```
